@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ (c) 2021 PicsArt, Inc.  All rights reserved.
+  -->
+
+<network-security-config>
+	<base-config cleartextTrafficPermitted="true">
+		<trust-anchors>
+			<certificates src="system"/>
+		</trust-anchors>
+	</base-config>
+	<debug-overrides>
+		<trust-anchors>
+			<!-- Trust user added CAs while debuggable only -->
+			<certificates src="user" />
+		</trust-anchors>
+	</debug-overrides>
+	<domain-config cleartextTrafficPermitted="true">
+		<domain includeSubdomains="true">picsart.com</domain>
+		<domain includeSubdomains="true">127.0.0.1</domain>
+		<domain includeSubdomains="true">http://192.168.15.138:5000</domain>
+		<domain includeSubdomains="true">meiease.cn</domain>
+		<domain includeSubdomains="true">182.254.116.117</domain>
+		<domain includeSubdomains="true">pingma.qq.com</domain>
+	</domain-config>
+</network-security-config>

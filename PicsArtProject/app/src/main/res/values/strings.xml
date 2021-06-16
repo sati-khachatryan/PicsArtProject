@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PicsArtProject</string>
+    <string name="buttonTxt">LOGIN</string>
+    <string name="checkBoxTxt">Remember me</string>
+    <string name="usernameEdtTxt">username</string>
+    <string name="passwordEdtTxt">password</string>
+    <string name="nameFromFragmentTxt">nameFromFragment</string>
+    <string name="emailFromFragmentTxt">emailFromFragment</string>
+    <string name="nameIs">Username is :</string>
+    <string name="emailIs">Useremail is :</string>
+</resources>
