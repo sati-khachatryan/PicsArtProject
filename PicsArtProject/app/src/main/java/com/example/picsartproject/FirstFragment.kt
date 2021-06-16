@@ -28,7 +28,7 @@ class FirstFragment : Fragment(), KoinComponent {
     var photoIdFromFragment = 0L
     var photoTitleFromFragment = "photoTitleFromFragment"
     var photoUrlFromFragment = "photoUrlFromFragment"
-    var current = -1
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -69,8 +69,6 @@ class FirstFragment : Fragment(), KoinComponent {
                     photoIdFromFragment = getList.id!!
                     photoTitleFromFragment = getList.title.toString()
                     photoUrlFromFragment = getList.url.toString()
-                    current++
-//                           elements.add(current, PhotoItem(photoIdFromFragment, photoUrlFromFragment, photoTitleFromFragment))
                     elements.add(
                         PhotoItem(
                             photoIdFromFragment,
